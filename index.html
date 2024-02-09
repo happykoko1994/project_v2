@@ -1086,12 +1086,12 @@
                                 setTimeout(function () {
 
                                     cards_block.style.left = Math.floor(Math.random() * (350 - 250) + 250) - random * 158 + 'px';
-                                    // setTimeout(() => {
-                                    //     prize.append(cards_block.children[random])
-                                    //     roullete.style.display = 'none'
-                                    //     finish.style.display = 'flex'
-                                    //     // localStorage.setItem('rolls', true);
-                                    // }, 6000);
+                                    setTimeout(() => {
+                                        prize.append(cards_block.children[random])
+                                        roullete.style.display = 'none'
+                                        finish.style.display = 'flex'
+                                        localStorage.setItem('rolls', true);
+                                    }, 6000);
 
 
                                 }, 500)
